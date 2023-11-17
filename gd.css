@@ -1,0 +1,45 @@
+.outfit-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1;
+}
+
+.outfit {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1 0 200px;
+}
+
+.outfit img {
+  max-width: 100%;
+  height: auto;
+}
+
+.outfit p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+/*cấu hình phân trang*/
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
