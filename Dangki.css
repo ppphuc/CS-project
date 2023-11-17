@@ -1,0 +1,313 @@
+/*--------------Body--------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main{
+    display: flex;
+}
+form {
+    flex: 1;
+    width: 100px;
+    padding: 50px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+}
+
+.main h1 {
+    margin-bottom: 50px;
+}
+
+
+.button-signup {
+    /* Chỉnh vị trí nút Đăng kí */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 60%;
+}
+
+.button-signup input[type="submit"] {
+    /* Chỉnh màu nút Đăng kí */
+    background-color: #000000;
+    color: aliceblue;
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+}
+
+.login-name input {
+    /*Chỉnh ô nhập thông tin */
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.password input {
+    /*Chỉnh ô nhập thông tin */
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.password-again input {
+    /*Chỉnh ô nhập thông tin */
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-radius: 15px;
+}
+
+.login-name label {
+    font-weight: bolder;
+}
+
+.password label {
+    font-weight: bolder;
+}
+
+
+.password-again label {
+    font-weight: bolder;
+}
+
+/* Chỉnh cái ảnh */
+.image-signup {
+    
+    text-align: right;
+    padding: 20px;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 20px;
+}
+
+.image-signup img {
+    height: auto;
+    width: 80%;
+}
+
+
+/*----------------------------header----------------------*/
+.header{
+    height: fit-content;
+    display: inline; 
+}
+.header-top{
+    
+    height: 40px;
+    display: flex;
+    line-height: 40px;
+    border-bottom: 1px solid rgb(8, 7, 7);
+    font-size: small;
+}
+.header-top-icon{
+   margin-left: 160px;
+   margin-right: 10px;
+}
+.header-top-text{
+    display: flex;
+    
+}
+.header-top-text-2{
+    color: rgb(262,165,14, 100%);
+}
+.header-bot{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 160px;
+}
+.logo{
+    margin-top: 10px;
+    justify-content: start;
+}
+.menu{
+    width: 800px;
+    line-height: 80px;
+    /* margin: auto 0; */ 
+}
+.menu ul a{
+    text-decoration: none;
+    color: black;
+}
+.function{
+    width: 300px;
+    display: flex;
+    
+}
+
+/* SEARCH */
+.search-container {
+    max-width: 400px;
+    height: 35px;
+   margin: 20px 0px 0px;
+    position: relative;
+}
+
+.search-box {
+    width: 243px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.search-box:focus + .search-icon {
+    color: #347837;
+}
+
+.icon-list{
+    display: flex;
+    margin-top: 30px;
+    
+    
+}
+.icon-list i{
+    margin-left: 20px;
+}
+.icon{
+    color: black;
+}
+
+.greeting{
+    background-color:rgba(117, 118, 83, 0.46) ;
+   text-align: center;
+   height: 35px;
+}
+.greeting p{
+    line-height: 35px;
+}
+/* MAIN */
+.main{
+    margin: 30px 140px;
+}
+.slide-show img{
+    display: block;
+}
+#slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    
+  }
+
+  .mySlides {
+    display: none;
+    transition:  0.6s ease;
+  }
+
+  .mySlides img {
+    width: 1235px;
+    height: 500px;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    margin-left: 200px;
+  }
+
+  .next {
+    right: -232px;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: -200px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+.fashion-type{
+    display: flex;
+    margin-top: 10px;
+}
+.fashion-type li{
+    list-style: none;
+}
+
+
+
+
+
+/*-------------------------------footer-----------------------*/
+
+.contact {
+    border-top: 1px solid black;
+    height: 300px;
+    display: flex;
+}
+
+.contact .info {
+    margin-left: 150px;
+}
+
+.contact .help {
+    margin: 0 200px;
+
+}
+
+.contact .help h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.help p {
+    margin-bottom: 10px;
+}
+
+.contact .connect .social {
+    display: flex;
+}
+
+.contact .connect h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.social a p i {
+    color: black;
+    margin-right: 10px;
+}
