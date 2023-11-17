@@ -11,6 +11,7 @@ ul{
 }
 li{
     justify-content: space-between;
+    list-style: none;
 }
 .container{
    
@@ -21,13 +22,15 @@ a{
     text-decoration: none;
     color: black;
 }
+h3{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    
+}
 /* HEADER */
 .header{
-    
-    height: fit-content;
-    
-   
-
+    height: fit-content; 
 }
 .header-top{
     
@@ -134,36 +137,165 @@ a{
 .slide-show img{
     display: block;
 }
+#slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    
+  }
+
+  .mySlides {
+    display: none;
+    transition:  0.6s ease;
+  }
+
+  .mySlides img {
+    width: 1235px;
+    height: 500px;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    margin-left: 200px;
+  }
+
+  .next {
+    right: -232px;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: -200px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
 .fashion-type{
     display: flex;
+    margin-top: 10px;
 }
-.fashion-type-shirt{
-    height: 535px;
-    width: 400px;
-    border: solid 1px black;
-    margin-right: 15px;
-     
+.fashion-type li{
+    list-style: none;
+}
 
+
+
+/* Thiết lập kiểu cho container sản phẩm */
+.product-container {
+    margin-right: 15px;
+    width: 400px;
+    height: 535px;
+    border: 1px solid #ccc;
+    background-color: rgba(59, 120, 177, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* Thiết lập kiểu cho ảnh sản phẩm */
+
+.product-image {
+   height: 465px;
+   width: 400px;
+    
+}
+
+/* Thiết lập kiểu cho tên sản phẩm và nút "Mua Ngay" */
+.product-details {
+   
+    text-align: center;
+    width: 100%; /* Để tạo chiều rộng bằng nhau cho tên và nút */
+}
+
+.product-name {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+/* Thiết lập kiểu cho nút "Mua Ngay" */
+.buy-now-button {
+    background-color: whitesmoke;
+    color: rgba(59, 120, 177, 1);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    margin-top: 10px;
+    
+    
+}
+.product-details{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* silde-slogan */
 .slide-slogan{
     margin-top: 30px;
     width: 1230px;
     height: 295px;
-    border: solid 1px black;
+    background-color: rgba(59, 120, 177, 1);
+    
 }
+.slide-slogan h1{
+   padding-top: 115px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
 .slide-product{
     display: flex;
 }
+.slide-product
 .product{
-    height: 535px;
+    height: 450px;
     width: 297px;
-    border: solid 1px black;
     margin-right: 15px;
+}
+.product img{
+    width: 297px;
+    height: 380px;
+}
+.product .product-name{
+    margin-top: 25px;
+    color: rgba(146, 146, 143, 1);
+    margin-bottom: 5px;
+    
+    
 }
 .sale-img{
     margin-top: 80px;
     height: 535px;
     border: solid 1px black;
+
+}
+.sale-img img{
+    height: 535px;
+    
+   
 }
 
 .search-container {
@@ -198,10 +330,13 @@ a{
     border-top: 1px solid black;
     height: 300px;
     display: flex;
+    background-color: gainsboro;
+    position: relative;
 }
 .contact .info{
     margin-left: 150px;
 }
+
 .contact .help{
    margin: 0 200px;
 
