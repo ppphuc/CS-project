@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>View cart</title>
+</head>
+<body>
+    <div class="breadcrums">
+        <ul class="items">
+            <li class="item Home">
+                <a href="#">Trang chủ |</a>
+            </li>
+            <li class="item Cart">
+                <strong>Giỏ hàng</strong>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        
+        <div class="title">
+            <h3><strong>GIỎ HÀNG</strong></h3>
+        </div>
+
+        <div class="content-cart">
+
+            <div class="cart">
+                <div class="cart-1">
+                    <div class="table-cart">
+                        <form action="#">
+                            <table class="empty-show">
+                                <tr>
+                                    <th class="product-name">Sản phẩm</th>
+                                    <th class="product-delete">&nbsp</th>
+                                    <th class="product-quantity">Số lượng</th>
+                                    <th class="product-price">Giá</th>
+                                    <th class="product-total">Tổng tiền</th>
+                                </tr>
+                                <tr class="row">
+                                    <td class="column1">
+                                            <img src="img/as20867d_1.webp" alt="">
+                                        <div class="product-detail">
+                                            <strong>
+                                                Áo Hoodie - HD23283
+                                            </strong>
+                                            <p>Màu sắc: <span><i class="fa-solid fa-circle"></i></span></p>
+                                            <p>Kích cỡ: <span>S</span></p>
+                                        </div>
+                                    </td>
+                                    <td class="delete">
+                                        <a href="" style="text-decoration: none; color: #c9ae63;">Xóa</a>
+                                    </td>
+                                    <td class="up-down">
+    
+                                        <div id="buy-amount">
+                                            <button class="minus-btn" onclick="handleMinus()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                              </svg>
+                                            </button>
+                                            <input type="text" name="amount" id="amount" value="1">
+                                            <button class="plus-btn" onclick="handlePlus()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                              </svg>
+                                            </button>
+                                        </div>
+                                        
+                                    </td>
+                                    <td>357.000đ</td>
+                                    <td>357.000đ</td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="column1">
+                                            <img src="img/as220120d_0_.webp" alt="">
+                                        <div class="product-detail">
+                                            <strong>
+                                                Áo Hoodie - HD23283
+                                            </strong>
+                                            <p>Màu sắc: <span><i class="fa-solid fa-circle"></i></span></p>
+                                            <p>Kích cỡ: <span>S</span></p>
+                                        </div>
+                                    </td>
+                                    <td class="delete">
+                                        <a href="" style="text-decoration: none; color: #c9ae63;">Xóa</a>
+                                    </td>
+                                    <td class="up-down">
+                                        <div id="buy-amount">
+                                            <button class="minus-btn" onclick="handleMinus()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                              </svg>
+                                            </button>
+                                            <input type="text" name="amount" id="amount" value="1">
+                                            <button class="plus-btn" onclick="handlePlus()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                              </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>357.000đ</td>
+                                    <td>357.000đ</td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="cart-2">
+                    <div class="total">
+
+                        <div class="total quantity of product">
+                            <span>TỔNG SẢN PHẨM: </span>
+                            <span>2</span>
+                        </div>
+    
+                        <div class="total-wrapper">
+                            <table>
+                                <tr>
+                                    <th style="color: #c9ae63; width: 130px;"><strong>TẠM TÍNH</strong></th>
+                                    <td><strong>714.000đ</strong></td>
+                                </tr>
+                            </table>
+                        </div>
+    
+                        <div class="order">
+                            <button style="background-color: black; color: aliceblue; height: 52px;"><strong>ĐẶT HÀNG</strong></button>
+                        </div>
+    
+                    </div>
+                    <div class="continue">
+
+                        <p>
+                            <a href="">TIẾP TỤC MUA HÀNG</a>
+                        </p>
+                        
+                    </div>
+
+                </div>
+                    
+    
+            </div>
+            
+               
+
+            <div class="photo-right">
+                <img src="img/beauty.webp" alt="">
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script></script>
+
+</body>
+</html>
