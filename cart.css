@@ -1,0 +1,197 @@
+.breadcrums{
+    height: 40px;
+    width: 100%; 
+    
+}
+
+ul.items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    left: 200px;
+}
+
+ul.items li{
+    margin: 10px;
+    padding: 3px;
+    float: left;
+}
+
+ul.items li a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    height: auto;
+    width: 100%;
+}
+.title{
+  
+    height: 50px;
+    width: 100%; 
+}
+
+.title strong{
+    position: relative;
+    left: 343px;
+
+}
+.content-cart{
+   
+    height: auto;
+    width: 100%;
+}
+
+.cart{
+   
+    height: 600px;
+    width: 60%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.cart-1{
+    width: 100%;
+   
+    height: 400px;
+}
+.cart-2{
+    width: 100%;
+    
+    height: 200px;
+}
+.photo-right{
+    
+    height: 600px;
+    width: 35%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+
+.photo-right img{
+    width: 60%;
+}
+
+.table-cart{
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+.empty-show{
+    width: 70%;
+    border-collapse: collapse;
+    empty-cells: show;
+    float: right;
+}
+
+.empty-show .row{
+    border-bottom: 1px dashed black ;
+}
+
+.row .column1{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.row img{
+    width: 20%;
+}
+
+.product-detail p{
+    width: 200px;
+}
+.empty-show th{
+    border-bottom: 2px solid black;
+    height: 40px;
+}
+
+.empty-show .product-name{
+    text-align: left;
+    width: 300px;
+}
+
+.empty-show .product-quantity{
+    text-align: center;
+    width: 200px;
+}
+
+.empty-show .product-price{
+    text-align: left;
+}
+
+.empty-show .product-total{
+    text-align: left;
+}
+
+.up-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#buy-amount{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#buy-amount button{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    background: none;
+    border: 1px solid #cfd3cb;
+    cursor: pointer;
+}
+
+#buy-amount button:hover{
+    background-color: #ececec;
+}
+
+#buy-amount button svg{
+    color: #909090;
+}
+
+#buy-amount button:hover svg{
+    color: #4f4f4f;
+}
+
+
+#buy-amount #amount{
+    width: 18%;
+    text-align: center;
+    border: 1px solid #cfd3cb;
+}
+
+.total{
+    float: right;
+    text-align: justify;
+    padding: 10px;
+}
+
+.total.quantity.of.product{
+    float: left;
+}
+
+.order button{
+    width: 200.91px;
+}
+.continue {
+    float: left;
+    border: 1px solid black;
+    width: 200.91px;
+    text-align: center;
+    position: relative;
+    bottom: -82px;
+    left: 340px;
+}
+
+.continue a {
+    text-decoration: none;
+    color: black;
+}
