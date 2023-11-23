@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="favor.css">
+    <title>Yêu thích sản phẩm</title>
+</head>
+<body>
+    <div class="container">
+        <button id="open"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+
+    <div class="model-container">
+        <div class="model">
+            <h3>Yêu thích</h3>
+
+            <ul class="pro-favor">
+                <li>
+                    <img src="img/Hhtt.jpg" alt="">
+                    <div class="infor">
+                        <p class="name">ÁO SƠ MI - AR230332DT</p>
+                        <p class="price">338.000đ</p>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="">Xem</a>
+                    <i class="fa-regular fa-rectangle-xmark"></i>
+                </li>
+                <li>
+                    <img src="img/Hhtt.jpg" alt="">
+                    <div class="infor">
+                        <p class="name">ÁO SƠ MI - AR230332DT</p>
+                        <p class="price">338.000đ</p>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="">Xem</a>
+                    <i class="fa-regular fa-rectangle-xmark"></i>
+                </li>
+                <li>
+                    <img src="img/Hhtt.jpg" alt="">
+                    <div class="infor">
+                        <p class="name">ÁO SƠ MI - AR230332DT</p>
+                        <p class="price">338.000đ</p>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="">Xem</a>
+                    <i class="fa-regular fa-rectangle-xmark"></i>
+                </li>
+                <li>
+                    <img src="img/Hhtt.jpg" alt="">
+                    <div class="infor">
+                        <p class="name">ÁO SƠ MI - AR230332DT</p>
+                        <p class="price">338.000đ</p>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="">Xem</a>
+                    <i class="fa-regular fa-rectangle-xmark"></i>
+                </li>
+            </ul>
+            <button id="close">Đóng</button>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#open').click(function(){
+                $('.model-container').css('transform','scale(1)');
+            });
+            $('#close').click(function(){
+                $('.model-container').css('transform','scale(0)');
+            });
+        });
+    </script>
+</body>
+</html>
